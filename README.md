@@ -1,4 +1,7 @@
 # SmartStock
+<p align="center">
+  <img src="logoapp.png" alt="Logo do Aplicativo" width="200"/>
+</p>
 
 ## Introdução
 
