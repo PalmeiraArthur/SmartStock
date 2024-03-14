@@ -23,11 +23,11 @@ SmartStock é uma solução inovadora desenvolvida para facilitar o gerenciament
 
 ## Instalação
 
-Instruções sobre como instalar o Nome do Aplicativo em diferentes sistemas operacionais. Se aplicável, inclua comandos para instalação via gerenciadores de pacotes ou links para downloads.
+Instruções sobre como instalar o SmartStock
 
 ## Uso
 
-Guia passo a passo de como utilizar as principais funcionalidades do aplicativo, incluindo como adicionar, editar e remover itens do estoque, além de visualizar relatórios de validade e consumo.
+Guia passo a passo de como utilizar as principais funcionalidades do aplicativo, incluindo como adicionar, editar e remover itens do estoque, além de visualizar relatórios de validade.
 
 ## Funcionalidades
 
@@ -37,7 +37,7 @@ Guia passo a passo de como utilizar as principais funcionalidades do aplicativo,
 
 ## Dependências
 
-Lista de todas as dependências de software necessárias para instalar e executar o Nome do Aplicativo.
+Lista de todas as dependências de software necessárias para instalar e executar o SmartStock.
 
 ## Configuração
 
