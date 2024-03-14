@@ -31,10 +31,9 @@ Guia passo a passo de como utilizar as principais funcionalidades do aplicativo,
 
 ## Funcionalidades
 
-- **Gestão de Inventário**: Acompanhamento em tempo real das quantidades e validades dos produtos.
-- **Alertas de Validade**: Notificações automáticas para produtos próximos ao fim de sua vida útil.
-- **Relatórios de Consumo**: Análise de tendências de consumo para otimização de compras e redução de desperdícios.
-- **Gestão de Informações Nutricionais**: Armazenamento e consulta de dados nutricionais de produtos.
+- **Cadastro de produtos**: Ao receber novos produtos, o supermercado cadastra cada item no sistema, incluindo informações essenciais como nome, quantidade/peso, data de validade/tempo que o produto pode ficar armazenado, data de recebimento e localização no estoque. Este processo garante que todos os produtos estejam rastreáveis dentro do sistema.
+- **Monitoramento de validade**: O sistema automaticamente monitora as datas de validade dos produtos cadastrados. Ele alerta os funcionários sobre os produtos que estão próximos do vencimento, permitindo que tomem ações para promover, descontar ou remover esses itens da venda.
+- **Agilidade no atendimento**:Com a localização precisa de cada produto no estoque, os funcionários conseguem preparar e despachar pedidos rapidamente, melhorando a experiência do cliente.
 
 ## Dependências
 
