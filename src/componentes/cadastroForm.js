@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import ImageUploader from './imgUploader/imgUploader';
 
 const CadastroForm = ({ onSubmit }) => {
   const [nomeProduto, setNomeProduto] = useState('');
@@ -6,9 +7,10 @@ const CadastroForm = ({ onSubmit }) => {
   const [dataEntrada, setDataEntrada] = useState('');
   const [validade, setValidade] = useState('');
 
-  const handleFotoChange = (event) => {
-    setFoto(event.target.files[0]);
+  const handleFotoChange = (file) => {
+    setFoto(file);
   };
+
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -27,8 +29,7 @@ const CadastroForm = ({ onSubmit }) => {
         />
       </div>
       <div>
-        <label>Foto do Produto:</label>
-        <input type="file" onChange={handleFotoChange} />
+      <ImageUploader onImageSelect={handleFotoChange} />
       </div>
       <div>
         <label>Data de Entrada:</label>

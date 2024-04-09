@@ -1,0 +1,38 @@
+.imageUploader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px dashed #5e5e5e;
+    background-color: #ccc;
+    border-radius: 10px;
+    width: 180px;
+    height: 180px;
+    cursor: pointer;
+    margin: 0px;
+  }
+
+  .descri {
+    padding: 2000px;
+  }
+  
+  .fotoPerfil {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .imagePreview {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 10px;
+  }
+  
+
+  .uploadIcon{
+    height: auto;
+    width: 35px;
+  }

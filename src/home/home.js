@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import AdicionarBotao from '../componentes/addButton';
+import AdicionarBotao from '../componentes/addButton/addButton';
 import CadastroForm from '../componentes/cadastroForm';
-import RemoveButton from '../componentes/removeButton';
+import RemoveButton from '../componentes/removeButton/removeButton';
+import styles from './home.module.css'
 
 function Home() {
   const [mostrarFormulario, setMostrarFormulario] = useState(false);
@@ -52,11 +53,14 @@ function Home() {
 
   return (
     <div>
+      <div>
       {!mostrarFormulario && <AdicionarBotao onClick={handleAdicionarClick} />}
+      </div>
+      
       {mostrarFormulario && <CadastroForm onSubmit={handleSubmitForm} />}
       <div>
         {produtos.map((produto, index) => (
-          <div key={index}>
+          <div key={index} className={styles.produto}>
             <h3>{produto.nomeProduto}</h3>
             {produto.imagemBase64 && (
               <img src={produto.imagemBase64} alt={`Foto do ${produto.nomeProduto}`} />

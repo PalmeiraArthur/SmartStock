@@ -1,0 +1,23 @@
+.addButton button{
+    display: flex;
+    border: none;
+    background-color: rgb(36, 129, 46);
+    border-radius: 8px;
+
+}
+
+.cadastrar{
+    color: aliceblue;
+    font-weight: 600;
+
+}
+
+.mais{
+    color:  rgb(36, 129, 46);;
+    font-weight: 600;
+    background-color: aliceblue;
+    height: auto;
+    width: 15px;
+    border-radius: 2px;
+    margin-left: 5px;
+}
