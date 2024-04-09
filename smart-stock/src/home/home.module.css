@@ -1,0 +1,9 @@
+.home{
+    text-align: center;
+}
+
+.home img{
+    margin-top: 40px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.637);
+    border-radius: 20px;
+}
