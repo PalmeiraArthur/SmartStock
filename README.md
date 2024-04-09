@@ -1,65 +1,70 @@
-# SmartStock
-<p align="center">
-  <img src="logoapp.png" alt="Logo do Aplicativo" width="200"/>
-</p>
+# Getting Started with Create React App
 
-## Introdução
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-SmartStock é uma solução inovadora desenvolvida para facilitar o gerenciamento de estoques de alimentos perecíveis. Com foco em reduzir desperdícios e otimizar a gestão de inventários, nosso aplicativo oferece uma plataforma intuitiva para controle de validades, quantidades e informações nutricionais de alimentos armazenados.
+## Available Scripts
 
-## Índice
+In the project directory, you can run:
 
-- [Introdução](#introdução)
-- [Instalação](#instalação)
-- [Uso](#uso)
-- [Funcionalidades](#funcionalidades)
-- [Dependências](#dependências)
-- [Configuração](#configuração)
-- [Documentação](#documentação)
-- [Exemplos](#exemplos)
-- [Solução de Problemas](#solução-de-problemas)
-- [Contribuidores](#contribuidores)
-- [Licença](#licença)
+### `npm start`
 
-## Instalação
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-Instruções sobre como instalar o SmartStock
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-## Uso
+### `npm test`
 
-Guia passo a passo de como utilizar as principais funcionalidades do aplicativo, incluindo como adicionar, editar e remover itens do estoque, além de visualizar relatórios de validade.
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-## Funcionalidades
+### `npm run build`
 
-- **Cadastro de produtos**: Ao receber novos produtos, o supermercado cadastra cada item no sistema, incluindo informações essenciais como nome, quantidade/peso, data de validade/tempo que o produto pode ficar armazenado, data de recebimento e localização no estoque. Este processo garante que todos os produtos estejam rastreáveis dentro do sistema.
-- **Monitoramento de validade**: O sistema automaticamente monitora as datas de validade dos produtos cadastrados. Ele alerta os funcionários sobre os produtos que estão próximos do vencimento, permitindo que tomem ações para promover, descontar ou remover esses itens da venda.
-- **Agilidade no atendimento**:Com a localização precisa de cada produto no estoque, os funcionários conseguem preparar e despachar pedidos rapidamente, melhorando a experiência do cliente.
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-## Dependências
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-Lista de todas as dependências de software necessárias para instalar e executar o SmartStock.
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-## Configuração
+### `npm run eject`
 
-Detalhes sobre como configurar o aplicativo após a instalação, se aplicável.
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-## Documentação
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Links para a documentação completa do aplicativo, incluindo manuais do usuário, API docs, e FAQs.
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-## Exemplos
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-Exemplos práticos de como o aplicativo pode ser utilizado no dia a dia para gerenciar eficientemente um estoque de alimentos perecíveis.
+## Learn More
 
-## Solução de Problemas
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-Soluções para problemas comuns encontrados pelos usuários, incluindo erros de instalação, problemas de compatibilidade e perguntas frequentes.
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-## Contribuidores
+### Code Splitting
 
-Reconhecimento das pessoas que contribuíram para o desenvolvimento do aplicativo.
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-## Licença
+### Analyzing the Bundle Size
 
-Informações sobre a licença sob a qual o aplicativo é distribuído, explicando os direitos e limitações dos usuários finais.
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
