@@ -1,0 +1,32 @@
+.header{
+    text-align: center;
+}
+
+.botaoAdicionar{
+    margin-top:20px;
+    margin-bottom: 20px;
+    display: flex;
+   
+    justify-content: center;
+}
+.container{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+
+.produto{
+    background-color: rgb(133, 136, 136);
+    width: 800px;
+    height: auto;
+}
+
+.produto img{
+    width: 40px;
+    height: 40px;
+}
+

@@ -7,9 +7,7 @@ const RemoveButton = ({ onRemove, id }) => {
       <button onClick={() => onRemove(id)}>
       <p className={styles.x}>X</p>
       <p className={styles.remover}>Remover Produto</p>
-
     </button>
-
     </div>
     
   );
