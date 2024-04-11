@@ -4,6 +4,7 @@ import AdicionarBotao from '../../componentes/addButton/addButton';
 import RemoveButton from '../../componentes/removeButton/removeButton';
 import styles from './home.module.css';
 import Header from '../../componentes/header/header';
+import Footer from '../../componentes/footer/footer';
 
 function Home() {
   const [produtos, setProdutos] = useState(() => {
@@ -44,10 +45,17 @@ function Home() {
   }, []);
 
   return (
-    <div className={styles.home}>
+    <div className={styles.home} class="relative mb-[200px] ">
       <div className={styles.header}>
         <Header></Header>
       </div>
+      <div class="fixed left-0 bottom-0 w-screen h-[70px]  ">
+      <Footer ></Footer>
+
+      </div>
+      
+      
+      
 
       <div className={styles.botaoAdicionar}>
         <AdicionarBotao onClick={handleAdicionarClick} />
@@ -66,6 +74,7 @@ function Home() {
           </div>
         ))}
       </div>
+      
     </div>
   );
 }
