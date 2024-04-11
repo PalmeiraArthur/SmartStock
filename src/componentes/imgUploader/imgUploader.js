@@ -13,7 +13,7 @@ const ImageUploader = ({ onImageSelect }) => {
   };
 
   return (
-    <div className={styles.imageUploader}>
+    <div class="flex items-center justify-center border-[#5e5e5e] border-2 border-dashed rounded-[10px] w-[180px] h-[180px] bg-white">
       <input id="arquivo" type="file" onChange={handleIconChange} style={{ display: 'none' }}/>
 
       <label htmlFor="arquivo" className={styles.fotoPerfil}>

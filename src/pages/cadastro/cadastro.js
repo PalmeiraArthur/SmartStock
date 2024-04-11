@@ -32,10 +32,14 @@ function Cadastro() {
   };
 
   return(
-    <div>
+    <div class="flex items-center justify-center round">
       <Header></Header>
+      <div class="flex items-center justify-center">
       <CadastroForm onSubmit={handleSubmit} />
+      </div>
+
     </div>
+    
   );
 }
 

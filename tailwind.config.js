@@ -5,7 +5,8 @@ module.exports = {
     extend: {
       colors:{
         'verde-smartStock': '#24812E',
-        'azul-smartStock' : '#001A32'
+        'azul-smartStock' : '#001A32',
+        
         
       }
     },

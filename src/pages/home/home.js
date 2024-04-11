@@ -46,9 +46,9 @@ function Home() {
 
   return (
     <div className={styles.home} class="relative mb-[200px] ">
-      <div className={styles.header}>
+
         <Header></Header>
-      </div>
+        
       <div class="fixed left-0 bottom-0 w-screen h-[70px]  ">
       <Footer ></Footer>
 
