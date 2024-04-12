@@ -45,32 +45,39 @@ function Home() {
   }, []);
 
   return (
-    <div className={styles.home} class="relative mb-[200px] ">
+    <div class="relative mb-[200px] ">
 
-        <Header></Header>
+      <Header></Header>
         
-      <div class="fixed left-0 bottom-0 w-screen h-[70px]  ">
+      <div class="fixed left-0 bottom-0 w-screen h-[70px] z-10  ">
       <Footer ></Footer>
-
       </div>
       
-      
-      
-
-      <div className={styles.botaoAdicionar}>
+      <div class="flex justify-center my-5">
         <AdicionarBotao onClick={handleAdicionarClick} />
       </div>
 
       <hr />
 
-      <div className={styles.container}>
+      <div class="flex flex-row justify-center gap-10 flex-wrap mt-5 z-0">
         {produtos.map((produto, index) => (
-          <div className={styles.produto} key={index}>
-            <h3>{produto.nomeProduto}</h3>
-            {produto.imagemBase64 && <img src={produto.imagemBase64} alt={`Foto do ${produto.nomeProduto}`} />}
-            <p>Data de entrada: {produto.dataEntrada}</p>
-            <p>Validade: {produto.validade}</p>
-            <RemoveButton onRemove={handleRemove} id={index} />
+
+          <div key={index} class="relative flex  bg-[rgb(133,136,136)] w-[800px] h-auto">
+
+            <div class="flex items-center justify-center bg-white rounded-md w-[120px] h-[120px] min-w-[120px] mx-3 my-3">
+              {produto.imagemBase64 && <img class="w-auto h-[100px]" src={produto.imagemBase64} alt={`Foto do ${produto.nomeProduto}`} />}
+            </div>
+
+            <div>
+              <h3>{produto.nomeProduto}</h3>
+              <p>Data de entrada: {produto.dataEntrada}</p>
+              <p>Validade: {produto.validade}</p>
+            </div>
+
+            <div class="absolute left-[695px] bottom-[1px] ">
+              <RemoveButton onRemove={handleRemove} id={index} />
+            </div>
+            
           </div>
         ))}
       </div>

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import styles from './imgUploader.module.css';
+
 
 const ImageUploader = ({ onImageSelect }) => {
   const [selectedImage, setSelectedImage] = useState(null);
@@ -13,14 +13,17 @@ const ImageUploader = ({ onImageSelect }) => {
   };
 
   return (
-    <div class="flex items-center justify-center border-[#5e5e5e] border-2 border-dashed rounded-[10px] w-[180px] h-[180px] bg-white">
+    <div class="flex items-center justify-center border-[#5e5e5e] border-2 border-dashed rounded-[10px] w-[250px] h-[250px] bg-white">
+      
       <input id="arquivo" type="file" onChange={handleIconChange} style={{ display: 'none' }}/>
 
-      <label htmlFor="arquivo" className={styles.fotoPerfil}>
+      <label htmlFor="arquivo" >
         {selectedImage ? (
-          <img src={selectedImage} alt="Upload preview" className={styles.imagePreview} />
+          <img src={selectedImage} alt="Upload preview" />
         ) : (
-          <div className={styles.uploadIcon}><img src={`${process.env.PUBLIC_URL}/images/uploadIcon.svg`} alt="Upload icon" className={styles.uploadIcon} /></div>
+          <div class="flex items-center justify-center w-[180px] h-[180px] bg-transparent">
+            <img class="w-[40px] h-[40px]" src={`${process.env.PUBLIC_URL}/img/uploadIcon.svg`} alt="Upload icon" />
+          </div>
         )}
       </label>
 

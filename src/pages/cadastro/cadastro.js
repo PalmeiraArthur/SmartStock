@@ -2,6 +2,7 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom'; // Atualizado para useNavigate
 import CadastroForm from '../../componentes/cadastroForm';
 import Header from '../../componentes/header/header';
+import Footer from '../../componentes/footer/footer';
 
 function Cadastro() {
   const navigate = useNavigate(); // Atualizado para useNavigate
@@ -32,11 +33,20 @@ function Cadastro() {
   };
 
   return(
-    <div class="flex items-center justify-center round">
+    <div>
       <Header></Header>
       <div class="flex items-center justify-center">
-      <CadastroForm onSubmit={handleSubmit} />
+        <div class="flex items-center justify-center bg-[#f5f4f4] border-2 border-verde-smartStock rounded-xl w-[1100px] h-[600px] mt-[40px] ">
+        <CadastroForm onSubmit={handleSubmit} />
+        </div>
       </div>
+      <div class=" fixed left-0 bottom-0 w-screen h-[70px] z-10">
+        <Footer></Footer>
+
+      </div>
+      
+
+     
 
     </div>
     
