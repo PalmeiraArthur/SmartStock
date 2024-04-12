@@ -1,4 +1,6 @@
 ![Logo da minha aplicação](/public/img/logoapp.png)
+
+
 Smart Stock
 
 Descrição:
