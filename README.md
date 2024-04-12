@@ -1,5 +1,5 @@
-Smart Stock
 ![Logo da minha aplicação](/public/img/logoapp.png)
+Smart Stock
 
 Descrição:
 Smart Stock é uma aplicação intuitiva e poderosa para acompanhar e analisar o mercado de ações. Com uma interface amigável e recursos avançados, o Smart Stock permite que os usuários monitorem seus investimentos de perto, tomem decisões informadas e fiquem atualizados sobre as últimas tendências do mercado.
