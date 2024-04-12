@@ -1,70 +1,17 @@
-# Getting Started with Create React App
+Smart Stock
+![Logo da minha aplicação](/public/img/logoapp.png)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Descrição:
+Smart Stock é uma aplicação intuitiva e poderosa para acompanhar e analisar o mercado de ações. Com uma interface amigável e recursos avançados, o Smart Stock permite que os usuários monitorem seus investimentos de perto, tomem decisões informadas e fiquem atualizados sobre as últimas tendências do mercado.
 
-## Available Scripts
+Recursos:
 
-In the project directory, you can run:
+Acompanhamento em Tempo Real: Obtenha atualizações em tempo real sobre o desempenho de suas ações e carteira de investimentos.
+Análise Avançada: Utilize ferramentas avançadas de análise técnica e fundamental para avaliar o desempenho das ações.
+Notificações Personalizadas: Receba notificações personalizadas sobre eventos importantes do mercado e mudanças nos preços das ações.
+Portfólio Personalizado: Crie e gerencie portfólios personalizados com facilidade, rastreando o desempenho de múltiplos ativos em um só lugar.
+Gráficos Interativos: Visualize dados históricos e tendências do mercado por meio de gráficos interativos e intuitivos.
+Por que escolher o Smart Stock?
+Combinando funcionalidades avançadas com uma interface simplificada, o Smart Stock é a escolha ideal para investidores de todos os níveis de experiência. Se você é um trader experiente ou apenas está começando sua jornada de investimento, o Smart Stock oferece as ferramentas necessárias para maximizar seus retornos e tomar decisões de investimento informadas.
 
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Comece a investir de forma inteligente hoje mesmo com o Smart Stock!
