@@ -13,7 +13,7 @@ const ImageUploader = ({ onImageSelect }) => {
   };
 
   return (
-    <div class="flex items-center justify-center border-[#5e5e5e] border-2 border-dashed rounded-[10px] w-[250px] h-[250px] bg-white">
+    <div class="flex items-center justify-center border-[#5e5e5e] border-2 border-dashed rounded-[10px] w-[250px] h-[250px] bg-white cursor-pointer">
       
       <input id="arquivo" type="file" onChange={handleIconChange} style={{ display: 'none' }}/>
 
@@ -21,7 +21,7 @@ const ImageUploader = ({ onImageSelect }) => {
         {selectedImage ? (
           <img src={selectedImage} alt="Upload preview" />
         ) : (
-          <div class="flex items-center justify-center w-[180px] h-[180px] bg-transparent">
+          <div class="flex items-center justify-center w-[250px] h-[250px] bg-transparent cursor-pointer">
             <img class="w-[40px] h-[40px]" src={`${process.env.PUBLIC_URL}/img/uploadIcon.svg`} alt="Upload icon" />
           </div>
         )}

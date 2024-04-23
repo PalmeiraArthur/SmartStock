@@ -1,6 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom'; // Atualizado para useNavigate
-import CadastroForm from '../../componentes/cadastroForm';
+import CadastroForm from '../../componentes/cadastroForm/cadastroForm';
 import Header from '../../componentes/header/header';
 import Footer from '../../componentes/footer/footer';
 
