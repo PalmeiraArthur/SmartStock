@@ -1,8 +1,11 @@
-<img src="./img/logoapp.png" alt="Logo do Aplicativo" width="200"/>
+<p align="center">
+ <img src="public/img/logoapp.png" alt="Logo do Aplicativo" width="200"/>
+</p>
 
-# Nome do Projeto
 
-SmartStock 
+## Nome do Projeto
+
+ **SmartStock** 
 
 ## Descrição
 
