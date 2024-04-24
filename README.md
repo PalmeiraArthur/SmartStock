@@ -1,4 +1,4 @@
-<img src="/img/logoapp.png" alt="Logo do Aplicativo" width="200"/>
+<img src="./img/logoapp.png" alt="Logo do Aplicativo" width="200"/>
 
 # Nome do Projeto
 
