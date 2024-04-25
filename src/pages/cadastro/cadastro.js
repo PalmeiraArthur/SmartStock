@@ -16,7 +16,7 @@ function Cadastro() {
       localStorage.setItem('produtos', JSON.stringify(produtos));
       
       // Redirecionar para Home após a adição
-      navigate('/'); // Atualizado para utilizar navigate
+      navigate('/home'); // Atualizado para utilizar navigate
     };
 
     if (dados.foto) {
