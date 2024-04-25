@@ -1,48 +1,54 @@
-  <img src="logoapp.png" alt="Logo do Aplicativo" width="200"/>
+<p align="center">
+ <img src="public/img/logoapp.png" alt="Logo do Aplicativo" width="200"/>
 </p>
-## Introdução
-SmartStock é uma solução inovadora desenvolvida para facilitar o gerenciamento de estoques de alimentos perecíveis. Com foco em reduzir desperdícios e otimizar a gestão de inventários, nosso aplicativo oferece uma plataforma intuitiva para controle de validades, quantidades e informações nutricionais de alimentos armazenados.
-## Índice
-- [Introdução](#introdução)
-- [Instalação](#instalação)
-- [Uso](#uso)
-- [Funcionalidades](#funcionalidades)
-- [Dependências](#dependências)
-- [Configuração](#configuração)
-- [Documentação](#documentação)
-- [Exemplos](#exemplos)
-- [Solução de Problemas](#solução-de-problemas)
-- [Contribuidores](#contribuidores)
-- [Licença](#licença)
 
-## Instalação
 
-Instruções sobre como instalar o Nome do Aplicativo em diferentes sistemas operacionais. Se aplicável, inclua comandos para instalação via gerenciadores de pacotes ou links para downloads.
-Instruções sobre como instalar o SmartStock
+## Nome do Projeto
 
-## Uso
+ **SmartStock** 
 
-Guia passo a passo de como utilizar as principais funcionalidades do aplicativo, incluindo como adicionar, editar e remover itens do estoque, além de visualizar relatórios de validade e consumo.
-Guia passo a passo de como utilizar as principais funcionalidades do aplicativo, incluindo como adicionar, editar e remover itens do estoque, além de visualizar relatórios de validade.
+## Descrição
+
+SmartStock  é um aplicativo que facilita dinamicamente o gerenciamento de produtos pereciveis em seu estoque.
+
+## Publico:
+
+Ideal para:
+
+Pequenos a médios negócios no setor de varejo, especialmente aqueles que lidam com produtos perecíveis, como mercados, lojas de conveniência, e estabelecimentos de alimentação, buscando uma solução robusta e fácil de usar para gerenciamento de estoque.
 
 ## Funcionalidades
 
-@@ -37,7 +37,7 @@ Guia passo a passo de como utilizar as principais funcionalidades do aplicativo,
+- Adiconar e remover produtos
+- Filtrar produtos por categorias
+- Retirar produtos de acordo com a data de validade
+- Compara e ordena os produtos
 
-## Dependências
+## Ferramentas Utilizadas
 
-Lista de todas as dependências de software necessárias para instalar e executar o Nome do Aplicativo.
-Lista de todas as dependências de software necessárias para instalar e executar o SmartStock.
+- Javascript
+- React
+- Tailwind
 
-## Configuração
+## Como Rodar o Código
 
-Detalhes sobre como configurar o aplicativo após a instalação, se aplicável.
-## Documentação
-Links para a documentação completa do aplicativo, incluindo manuais do usuário, API docs, e FAQs.
-## Exemplos
-Exemplos práticos de como o aplicativo pode ser utilizado no dia a dia para gerenciar eficientemente um estoque de alimentos perecíveis.
-## Solução de Problemas
-Soluções para problemas comuns encontrados pelos usuários, incluindo erros de instalação, problemas de compatibilidade e perguntas frequentes.
-## Contribuidores
-Reconhecimento das pessoas que contribuíram para o desenvolvimento do aplicativo.
-## Licença
+ná pagina inicial do repositório clique em <> code e copie o url que está mostrando
+
+dê git clone no reposítorio do projeto, abra o terminal e coloque
+
+ $ git clone <código url copiado>
+
+
+
+### Pré-requisitos
+
+O que precisa ser instalado para rodar o projeto e como instalá-los, por exemplo:
+
+
+npm install react 
+npm install react-router-dom
+
+também pode ser usado o npm install no terminal para baixar tudo de uma vez
+
+
+## Imagens :
