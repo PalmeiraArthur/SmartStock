@@ -2,6 +2,9 @@
  <img src="public/img/logoapp.png" alt="Logo do Aplicativo" width="200"/>
 </p>
 
+## Grupo do Projeto
+
+- Arthur Francisco, Arthur Palmeira, Higor Matheus e José Samuel
 
 ## Nome do Projeto
 
