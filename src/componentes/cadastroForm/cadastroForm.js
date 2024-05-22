@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import ImageUploader from '../imgUploader/imgUploader';
 import { useCategorias } from '../categoriaContext/categoriaContext';
-import Select from 'react-select'; // Importa o Select de react-select
+import Select from 'react-select';
 
 const CadastroForm = ({ onSubmit }) => {
     const [nomeProduto, setNomeProduto] = useState('');
@@ -11,6 +11,12 @@ const CadastroForm = ({ onSubmit }) => {
     const [preco, setPreco] = useState('');
     const [categoria, setCategoria] = useState(null);
     const { categorias, addCategoria } = useCategorias();
+
+    useEffect(() => {
+        const now = new Date();
+        const formattedDate = now.toISOString().slice(0, 10);
+        setDataEntrada(formattedDate);
+    }, []);
 
     const handleFotoChange = (file) => {
         setFoto(file);
@@ -23,13 +29,12 @@ const CadastroForm = ({ onSubmit }) => {
             outline: state.isFocused ? '1px solid #24812E' : 'none',
             boxShadow: state.isFocused ? '0 0 0 0px ##24812E' : 'none',
             '&:hover': {
-                // Manter o estilo mesmo quando passa o mouse, sem alterações
-                borderColor: state.isFocused ? '#24812E' : provided.borderColor, // Mantém a mesma lógica de foco
-                boxShadow: state.isFocused ? '0 0 0 1px blue' : 'none' // Mantém a mesma lógica de foco
+                borderColor: state.isFocused ? '#24812E' : provided.borderColor,
+                boxShadow: state.isFocused ? '0 0 0 1px blue' : 'none'
             }
-    
         })
     };
+
     const handleSubmit = (event) => {
         event.preventDefault();
         let categoriaFinal = categoria ? categoria.value : '';
@@ -63,7 +68,6 @@ const CadastroForm = ({ onSubmit }) => {
                 </div>
                 <div className='flex items-center gap-[10px]'>
                     <label>Categoria do Produto:</label>
-                    
                     <Select className="basic-single" classNamePrefix="select" value={options.find(option => option.value === categoria?.value)} onChange={setCategoria} options={options} placeholder="Selecione uma categoria" isClearable styles={customStyles}/>
                 </div>
                 <div className="absolute -left-[-200px] bottom-[0px] flex items-center justify-center">
