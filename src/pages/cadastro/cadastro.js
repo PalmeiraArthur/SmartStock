@@ -33,21 +33,16 @@ function Cadastro() {
   };
 
   return(
-    <div>
-      <Header></Header>
+    <div className='flex flex-col gap-[40px]'>
+      <Header text="Adicionar produto"/>
       <div class="flex items-center justify-center">
-        <div class="flex items-center justify-center bg-[#f5f4f4] border-2 border-verde-smartStock rounded-xl w-[1100px] h-[600px] mt-[40px] ">
+        <div class="flex items-center justify-center bg-[#f5f4f4] border-2 border-verde-smartStock rounded-xl w-[1100px] h-[600px]">
         <CadastroForm onSubmit={handleSubmit} />
         </div>
       </div>
       <div class=" fixed left-0 bottom-0 w-screen h-[70px] z-10">
         <Footer></Footer>
-
       </div>
-      
-
-     
-
     </div>
     
   );
