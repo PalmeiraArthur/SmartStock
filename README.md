@@ -55,9 +55,3 @@ npm install react-router-dom
 também pode ser usado o npm install no terminal para baixar tudo de uma vez
 
 
-## Imagens :
-<p align="center">
- <img src="public/prints/telaLogin.png" alt="Logo do Aplicativo" width="200"/>
- <img src="public/prints/telaCadastro.png" alt="Logo do Aplicativo" width="200"/>
- <img src="public/prints/telaHome.png" alt="Logo do Aplicativo" width="200"/>
-</p>
