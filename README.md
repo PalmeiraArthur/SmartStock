@@ -41,6 +41,9 @@ dê git clone no reposítorio do projeto, abra o terminal e coloque
 
  $ git clone <código url copiado>
 
+ ## Link do site no vercel
+ https://smart-stock-three.vercel.app/
+
 
 
 ### Pré-requisitos
