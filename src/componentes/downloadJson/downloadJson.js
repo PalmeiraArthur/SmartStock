@@ -2,14 +2,24 @@ import React from 'react';
 
 function DownloadJsonButton() {
   const handleDownloadJson = () => {
-    const produtos = localStorage.getItem('produtos');
-    const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(produtos);
-    const downloadAnchorNode = document.createElement('a');
-    downloadAnchorNode.setAttribute("href", dataStr);
-    downloadAnchorNode.setAttribute("download", "produtos.json");
-    document.body.appendChild(downloadAnchorNode); // required for firefox
-    downloadAnchorNode.click();
-    downloadAnchorNode.remove();
+    let produtos = localStorage.getItem('produtos');
+    if (produtos) {
+      produtos = JSON.parse(produtos);
+      const produtosFiltrados = produtos.map(produto => ({
+        nome: produto.nomeProduto || "Nome não disponível",  // Ajuste para nomeProduto
+        dataValidade: produto.validade || "Data de validade não disponível",  // Ajuste para validade
+        categoria: produto.categoria || "Categoria não disponível"
+      }));
+      const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(produtosFiltrados));
+      const downloadAnchorNode = document.createElement('a');
+      downloadAnchorNode.setAttribute("href", dataStr);
+      downloadAnchorNode.setAttribute("download", "produtos.json");
+      document.body.appendChild(downloadAnchorNode); // required for firefox
+      downloadAnchorNode.click();
+      downloadAnchorNode.remove();
+    } else {
+      console.error('No products found in localStorage');
+    }
   };
 
   return (
