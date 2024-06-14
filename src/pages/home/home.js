@@ -6,7 +6,8 @@ import Header from '../../componentes/header/header';
 import Footer from '../../componentes/footer/footer';
 import CategoriaFiltro from '../../componentes/filtro/filtro';
 import PopupHistorico from '../../componentes/popupHistorico/popupHistorico';
-import { useCategorias } from '../../componentes/categoriaContext/categoriaContext';  // Importando useCategorias
+import { useCategorias } from '../../componentes/categoriaContext/categoriaContext';
+import Barcode from 'react-barcode'; 
 
 function Home() {
   const [produtos, setProdutos] = useState(() => {
@@ -19,7 +20,7 @@ function Home() {
   });
   const [filtroCategoria, setFiltroCategoria] = useState('');
   const [showPopup, setShowPopup] = useState(false);
-  const { categorias } = useCategorias();  // Obtendo categorias do contexto
+  const { categorias } = useCategorias(); 
 
   const navigate = useNavigate();
 
@@ -103,21 +104,25 @@ function Home() {
 
       <div className={`flex justify-center items-center gap-[32px] flex-wrap mt-[20px] z-0 text-slate-200 font-semibold ${filtroCategoria === '' ? 'flex-row' : 'flex-col'}`}>
         {produtosFiltradosEOrdenados.map((produto) => (
-          <div key={produto.id} className="relative flex items-start bg-[rgb(107,109,109)] w-[600px] h-auto rounded-[10px]">
-            <div className="flex items-center justify-center bg-white rounded-md w-[120px] h-[120px] min-w-[120px] mx-3 my-3 overflow-hidden">
+          <div key={produto.id} className="relative flex items-start bg-[rgb(107,109,109)] w-[600px] h-[310px] rounded-[10px] pt-[30px]">
+            <div className="flex items-center justify-center bg-white rounded-md w-[150px] h-[150px] min-w-[150px] mx-3 my-3 overflow-hidden">
               {produto.imagemBase64 && <img className="w-full h-full object-cover" src={produto.imagemBase64} alt={`Foto do ${produto.nomeProduto}`} />}
             </div>
 
-            <div className='mt-[10px]'>
-              <h3 className='font-bold text-[18px] text-white'>{produto.nomeProduto}</h3>
+            <div className='mt-[10px] text-[19px] font-medium'>
+              <h3 className='font-bold text-[22px] text-white'>{produto.nomeProduto}</h3>
               <p>Data de entrada: {formatarDataParaExibicao(produto.dataEntrada)}</p>
               <p>Validade: {formatarDataParaExibicao(produto.validade)}</p>
               <p>Categoria: {produto.categoria}</p>
             </div>
 
-            <div className="absolute right-[5px] top-[5px] flex gap-2">
-              <button className="text-white bg-blue-500 px-2 py-1 rounded" onClick={() => handleEditClick(produto.id)}>Editar</button>
+            <div className="absolute right-[5px] top-[5px] flex gap-2 pt-[2px] pr-[2px]">
+              <button className="text-white bg-blue-500 px-2 py-1 rounded hover:bg-blue-600 ease-in duration-200" onClick={() => handleEditClick(produto.id)}>Editar</button>
               <RemoveButton onRemove={() => handleRemove(produto.id)} id={produto.id} />
+            </div>
+
+            <div className="absolute right-[100px] bottom-[5px]">
+              <Barcode value={produto.barcode} width={1} height={50} background="" text={produto.id}/>
             </div>
           </div>
         ))}

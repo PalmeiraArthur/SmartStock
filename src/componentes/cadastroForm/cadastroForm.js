@@ -61,7 +61,8 @@ const CadastroForm = ({ onSubmit, initialData }) => {
       dataEntrada, 
       validade, 
       preco, 
-      categoria: categoriaFinal 
+      categoria: categoriaFinal,
+      barcode: initialData ? initialData.barcode : uuidv4().replace(/-/g, '')  // Adiciona o barcode
     };
 
     if (initialData) {
@@ -78,9 +79,10 @@ const CadastroForm = ({ onSubmit, initialData }) => {
     <form className="relative flex items-center justify-center w-[800px] h-[500px]" onSubmit={handleSubmit}>
       <div>
         {initialData ? (
-          <div className="flex items-center justify-center bg-white rounded-md w-[120px] h-[120px] min-w-[120px] mx-3 my-3 overflow-hidden">
-            {initialData.imagemBase64 && <img className="w-full h-full object-cover" src={initialData.imagemBase64} alt={`Foto do ${initialData.nomeProduto}`} />}
-          </div>
+          <div className="flex items-center justify-center bg-white rounded-md w-[250px] h-[250px] min-w-[250px] mx-3 my-3 overflow-hidden">
+          {initialData.imagemBase64 && <img className="w-full h-full object-cover" src={initialData.imagemBase64} alt={`Foto do ${initialData.nomeProduto}`} />}
+        </div>
+        
         ) : (
           <ImageUploader onImageSelect={handleFotoChange} />
         )}
@@ -109,7 +111,7 @@ const CadastroForm = ({ onSubmit, initialData }) => {
           </div>
         )}
         <div className="absolute -left-[-200px] bottom-[0px] flex items-center justify-center">
-          <button className="text-white bg-verde-smartStock w-[400px] h-[60px] rounded-md" type="submit">{initialData ? 'Salvar Alterações' : 'Cadastrar Produto'}</button>
+          <button className="text-white bg-verde-smartStock w-[400px] h-[60px] rounded-md hover:bg-[rgb(36,160,46)] ease-in-out duration-300 " type="submit">{initialData ? 'Salvar Alterações' : 'Cadastrar Produto'}</button>
         </div>
       </div>
     </form>

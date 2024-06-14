@@ -3,15 +3,18 @@ import { useNavigate } from 'react-router-dom'; // Atualizado para useNavigate
 import CadastroForm from '../../componentes/cadastroForm/cadastroForm';
 import Header from '../../componentes/header/header';
 import Footer from '../../componentes/footer/footer';
+import { v4 as uuidv4 } from 'uuid'; // Importando a biblioteca para gerar UUIDs
+import Barcode from 'react-barcode'; // Importando a biblioteca para gerar códigos de barras
 
 function Cadastro() {
   const navigate = useNavigate(); // Atualizado para useNavigate
 
   const handleSubmit = (dados) => {
-    // Função chamada após a leitura do arquivo ou diretamente para produtos sem foto
     const adicionarProduto = (produto) => {
       const produtosSalvos = localStorage.getItem('produtos');
       const produtos = produtosSalvos ? JSON.parse(produtosSalvos) : [];
+      produto.id = uuidv4(); // Gerar ID único para o produto
+      produto.barcode = uuidv4().replace(/-/g, ''); // Gerar um código de barras aleatório
       produtos.push(produto);
       localStorage.setItem('produtos', JSON.stringify(produtos));
       
@@ -35,16 +38,15 @@ function Cadastro() {
   return(
     <div className='flex flex-col gap-[40px]'>
       <Header text="Adicionar produto"/>
-      <div class="flex items-center justify-center">
-        <div class="flex items-center justify-center bg-[#f5f4f4] border-2 border-verde-smartStock rounded-xl w-[1100px] h-[600px]">
+      <div className="flex items-center justify-center">
+        <div className="flex items-center justify-center bg-[#f5f4f4] border-2 w-[1100px] h-[600px] shadow-2xl rounded-xl border-none">
         <CadastroForm onSubmit={handleSubmit} />
         </div>
       </div>
-      <div class=" fixed left-0 bottom-0 w-screen h-[70px] z-10">
+      <div className="fixed left-0 bottom-0 w-screen h-[70px] z-10">
         <Footer></Footer>
       </div>
     </div>
-    
   );
 }
 
