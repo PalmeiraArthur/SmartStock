@@ -1,6 +1,4 @@
-<p align="center">
- <img src="public/img/logoapp.png" alt="Logo do Aplicativo" width="200"/>
-</p>
+
 
 ## Grupo do Projeto
 
