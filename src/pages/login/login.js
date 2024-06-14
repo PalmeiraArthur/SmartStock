@@ -23,17 +23,17 @@ function LoginPage() {
 
             <img className='w-[330px] h-[330px]' src='./img/logoPngAzulSvg.svg'/>
 
-            <div className='justify-center items-center flex flex-col gap-[50px] pt-[40px] p-[80px] rounded-lg bg-verde-smartStock '>
+            <div className='justify-center items-center flex flex-col gap-[50px] w-[500px] h-[450px] rounded-lg bg-verde-smartStock shadow-slate-500 shadow-xl '>
 
             <h1 className='text-white text-[30px] text-center font-semibold'>Acessar <br></br>estabelecimento</h1>
                 <form className='flex flex-col gap-[50px] items-center' onSubmit={handleLogin}>
-                    <div className='flex flex-col gap-[13px]'>
+                    <div className='flex flex-col gap-[30px]'>
                     <label>
-                        <input className='bg-transparent border-[2px] p-[8px] rounded-md border-white placeholder-white placeholder:opacity-50 placeholder:font-semibold placeholder:text-[20px] text-[20px] text-white focus:placeholder:opacity-0 focus:outline-none ' placeholder='Usuario:' type="text" value={username} onChange={(e) => setUsername(e.target.value)} />
+                        <input className='bg-transparent border-[2px] w-[300px] p-[8px] rounded-md border-white placeholder-white placeholder:opacity-50 placeholder:font-semibold placeholder:text-[20px] text-[20px] text-white focus:placeholder:opacity-0 focus:outline-none ' placeholder='Usuario:' type="text" value={username} onChange={(e) => setUsername(e.target.value)} />
                     </label>
 
                     <label>
-                        <input className='bg-transparent border-[2px] p-[8px] rounded-md border-white placeholder-white placeholder:opacity-50 placeholder:font-semibold placeholder:text-[20px] text-[20px] text-white focus:placeholder:opacity-0 focus:outline-none '  placeholder='Senha:' type="password" value={password} onChange={(e) => setPassword(e.target.value)} />
+                        <input className='bg-transparent border-[2px] w-[300px] p-[8px] rounded-md border-white placeholder-white placeholder:opacity-50 placeholder:font-semibold placeholder:text-[20px] text-[20px] text-white focus:placeholder:opacity-0 focus:outline-none '  placeholder='Senha:' type="password" value={password} onChange={(e) => setPassword(e.target.value)} />
                     </label>
 
                     </div>
