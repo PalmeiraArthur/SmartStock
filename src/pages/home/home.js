@@ -86,6 +86,7 @@ function Home() {
     <div className="flex flex-col justify-center items-center relative mb-[200px] ">
       <Header text="Produtos" />
 
+
       <div className='flex flex-row justify-center items-center gap-[20px] ml-[80px]'>
         
       <div className='flex flex-col justify-center items-center gap-[20px] mt-[20px] mb-[20px]'>
@@ -95,6 +96,7 @@ function Home() {
       <button className="flex justify-center items-center h-[60px] w-[60px] bg-verde-smartStock text-white rounded" onClick={() => setShowPopup(true)}>
         <img className='h-auto w-[50px]' src='img/historico.svg'/>
       </button>
+
 
       </div>
       
